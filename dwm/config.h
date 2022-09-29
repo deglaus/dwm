@@ -1,5 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
+
+
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -61,7 +63,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *web[] = { "firefox", NULL };
 static const char *emacs[] = { "emacs", NULL };
-static const char *thunar[] = {"thunar", NULL};
+static const char *nemo[] = {"nemo", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -69,7 +71,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_f,      spawn,          {.v = web } },
 	{ MODKEY|ShiftMask,             XK_e,      spawn,          {.v = emacs } },
-	{ MODKEY|ShiftMask,             XK_t,      spawn,          {.v = thunar } },
+	{ MODKEY|ShiftMask,             XK_t,      spawn,          {.v = nemo } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
